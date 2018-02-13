@@ -32,7 +32,6 @@ public class Piloot {
 
     @Override
     public String toString() {
-        //John Travolta heeft 0 vlieguren gemaakt en verdient 123456.78
         return this.naam + " heeft " + this.VliegUren + " vlieguren gemaakt en verdient " + this.Salaris;
     }
 }

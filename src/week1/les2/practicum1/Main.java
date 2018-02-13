@@ -14,6 +14,6 @@ public class Main {
         z2.setDiepte(2.0);
         double inh = z2.inhoud();
         System.out.println("GEGEVENS ZWEMBAD: "+z2.toString());
-        System.out.println("BEREKENDE INHOUD: " + z2.inhoud());
+        System.out.println("BEREKENDE INHOUD: " + inh);
     }
 }
