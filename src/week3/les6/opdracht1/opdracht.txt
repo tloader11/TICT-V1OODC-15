@@ -1,0 +1,21 @@
+s1 = "route" + 6 + 6;
+s2 = 6 + 6 + "route";
+s1 = route66
+s2 = 12route
+=================================================
+s3 = "concert" + "piano";
+s4 = "concertpiano";
+Betekent: s3 == s4 hetzelfde als: s3.equals(s4) ?
+Nee, de objecten hebben dezelfde data, maar zijn het het zelfde object. equals = true, == = false.
+=================================================
+Hoe vraag je de lengte op van een string? --> stringnaam.length();
+Is dat inclusief eventuele spaties en/of leestekens? --> ja, inclusief allebei.
+=================================================
+Met welke methode / code kun je een letter op een bepaalde positie achterhalen volgens
+de documentatie van klasse String? --> .charAt()
+=================================================
+In het woordenboek komt "boom" voor "roos". Met welke methode kun je controleren
+welke van 2 strings lexicografisch eerder of later komt dan de andere? --> .compareTo ()
+=================================================
+Ingelezen waarden zijn doorgaans strings. Wat is de code om een string om te zetten naar
+een int? En wat is de code om een string om te zetten naar een double? --> Integer.parseInt() , Double.parseDouble()

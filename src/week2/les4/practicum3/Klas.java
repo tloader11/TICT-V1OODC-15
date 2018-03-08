@@ -35,7 +35,7 @@ public class Klas
     @Override
     public String toString() {
         String returnval = "";
-        returnval = "In klas "+this.klasCode+" zitten de volgende leerlingen: \n";
+        returnval = "In klas " + this.klasCode + " zitten de volgende leerlingen: \n";
         for(Leerling l : this.leerlingen)
         {
             returnval += l;
