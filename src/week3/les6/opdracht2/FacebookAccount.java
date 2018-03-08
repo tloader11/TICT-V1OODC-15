@@ -45,7 +45,7 @@ public class FacebookAccount
     @Override
     public String toString() {
         String returnstring = "";
-        returnstring += "Mike heeft "+this.aantalVrienden()+" vrienden: \n";
+        returnstring += this.naam + " heeft "+this.aantalVrienden()+" vrienden: \n";
         for(Vriend v : this.vrienden)
         {
             returnstring = returnstring + v + '\n';
