@@ -1,6 +1,5 @@
 package week2.les4.opdracht3;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,7 +9,7 @@ public class Main
     public static String getInput()
     {
         Scanner scanner = new Scanner(System.in); //scanner koppelen aan toetsenbord
-        System.out.print("Voer uw naam in: ");
+        System.out.print("Voer getal vanaf 10 in: ");
         String getal = scanner.nextLine(); // scanner wacht op invoer + enter
         //scanner.close(); // scanner afsluiten na gebruik
         return getal;
