@@ -6,6 +6,7 @@ public class Huisdier
     private String ras;
     private Double gewicht;
     private Eigenaar Baasje;
+
     public Huisdier(String naam, String ras)
     {
         this.naam = naam;
@@ -19,7 +20,7 @@ public class Huisdier
     }
 
     public void setBaasje(Eigenaar baasje) {
-        Baasje = baasje;
+        this.Baasje = baasje;
     }
 
     @Override

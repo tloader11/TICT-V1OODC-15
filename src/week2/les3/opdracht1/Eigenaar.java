@@ -28,6 +28,10 @@ public class Eigenaar
 
     @Override
     public String toString() {
+        if(this.naam==null)
+        {
+            return null;
+        }
         return this.naam+" heeft giro " + this.giroNr;
     }
 }
