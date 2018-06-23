@@ -1,106 +1,34 @@
 package week4.les8.opdracht3;
 
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class Main
 {
-
-    private JFrame frame;
-    private JTextField textField;
-    private JTextField textField_1;
-    private JTextField textField_2;
-    private JTextField textField_3;
-
-    /**
-     * Launch the application.
+    /*
+    1. Met welke opdracht start je een JavaFX applicatie altijd?
+    launch()
+    2. Wat is het verschil tussen een Stage en een Scene object?
+    Een stage heeft een scene, scenes zijn verwisselbaar binnen een stage.
+    3. Welk object moet je zelf aanmaken, een Stage of een Scene?
+    scene
+    4. Welke klasse moet elk JavaFX programma extenden?
+    Application
+    5. Welke methode moet elke JavaFX applicatie te hebben?
+    start()
+    6. Hoe komt het dat een applicatie anders niet gecompileerd kan worden?
+    Omdat de method die uitgevoerd wordt mist
+    7. Met welke methode kan je jouw applicatie zichtbaar maken?
+    .show();
+    8. Welke interface gebruik je om onder andere gebruikersinvoer af te vangen?
+    handle(ActionEvent event)
+    9. Wat is de naam van de methode om een item in een StackPane bovenop te plaatsen?
+    stackPane.Children.Insert(0, item);
+    10. Hoeveel constructors heeft HBox om de afstand tussen items in een box in te stellen?
+    1
+    11. Met welke methode kan je de afstand tussen items in een HBox naderhand nog wijzigen?
+    setMargin
+    12. Met welke methode stel je in één keer de breedte en hoogte van je labels en buttons in?
+    setPadding
+    13. Hoe voeg je child-elementen toe aan bijvoorbeeld een FlowPane? En hoe aan een HBox?
+     hbox: .getChildren().add()
+     flowpane: .getChildren().add()
      */
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    Main window = new Main();
-                    window.frame.setVisible(true);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-
-    /**
-     * Create the application.
-     */
-    public Main() {
-        initialize();
-    }
-
-    /**
-     * Initialize the contents of the frame.
-     */
-    private void initialize() {
-        frame = new JFrame();
-        frame.setBounds(100, 100, 730, 489);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().setLayout(null);
-
-        textField = new JTextField();
-        textField.setBounds(128, 28, 86, 20);
-        frame.getContentPane().add(textField);
-        textField.setColumns(10);
-
-        JLabel lblName = new JLabel("Name");
-        lblName.setBounds(65, 31, 46, 14);
-        frame.getContentPane().add(lblName);
-
-        JLabel lblPhone = new JLabel("adres");
-        lblPhone.setBounds(65, 68, 46, 14);
-        frame.getContentPane().add(lblPhone);
-
-        textField_1 = new JTextField();
-        textField_1.setBounds(128, 65, 86, 20);
-        frame.getContentPane().add(textField_1);
-        textField_1.setColumns(10);
-
-        JLabel lblEmailId = new JLabel("aankomst");
-        lblEmailId.setBounds(65, 115, 46, 14);
-        frame.getContentPane().add(lblEmailId);
-
-        textField_2 = new JTextField();
-        textField_2.setBounds(128, 112, 247, 17);
-        frame.getContentPane().add(textField_2);
-        textField_2.setColumns(10);
-
-
-        JLabel lblVertrek = new JLabel("vertrek");
-        lblVertrek.setBounds(65, 155, 46, 14);
-        frame.getContentPane().add(lblVertrek);
-
-        textField_3 = new JTextField();
-        textField_3.setBounds(128, 152, 247, 17);
-        frame.getContentPane().add(textField_3);
-        textField_3.setColumns(10);
-
-
-
-        JButton btnSubmit = new JButton("submit");
-
-        btnSubmit.setBackground(Color.BLUE);
-        btnSubmit.setForeground(Color.MAGENTA);
-        btnSubmit.setBounds(65, 387, 89, 23);
-        frame.getContentPane().add(btnSubmit);
-
-
-        btnSubmit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                if(textField.getText().isEmpty()||(textField_1.getText().isEmpty())||(textField_2.getText().isEmpty()))
-                    JOptionPane.showMessageDialog(null, "Data Missing");
-                else
-                    JOptionPane.showMessageDialog(null, "Data Submitted");
-            }
-        });
-    }
 }
